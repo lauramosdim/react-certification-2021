@@ -5,14 +5,14 @@ import { lightTheme, darkTheme } from '../../themes';
 import Home from '../../pages/Home';
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const themeToggler = () => (theme === 'light' ? setTheme('dark') : setTheme('light'));
 
   return (
     <>
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-        <Home themeToggler={themeToggler} />
+        <Home themeToggler={themeToggler} theme={theme} />
       </ThemeProvider>
     </>
   );

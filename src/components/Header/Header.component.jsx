@@ -11,22 +11,22 @@ import {
 import MenuSVG from '../../assets/images/MenuSVG';
 import ThemeToggle from './ThemeToggle/ThemeToggle.component';
 
-const Header = ({ themeToggler }) => {
+const Header = ({ themeToggler, theme }) => {
   return (
     <HeaderWrapper>
       <HeaderContent>
         <HeaderSection1>
-      <HeaderMenu >    
-        <MenuSVG/>
-        </HeaderMenu >      
-       <HeaderSearchInput placeholder='wizeline'/>
-       </HeaderSection1>
-       <HeaderSection2>
-         <ThemeToggle themeToggler={themeToggler}/>
-         <HeaderLoginIcon/>
-       </HeaderSection2>
-       </HeaderContent>
-      </HeaderWrapper>
+          <HeaderMenu>
+            <MenuSVG />
+          </HeaderMenu>
+          <HeaderSearchInput placeholder="Search..." defaultValue="wizeline" />
+        </HeaderSection1>
+        <HeaderSection2>
+          <ThemeToggle themeToggler={themeToggler} theme={theme} />
+          <HeaderLoginIcon />
+        </HeaderSection2>
+      </HeaderContent>
+    </HeaderWrapper>
   );
 };
 

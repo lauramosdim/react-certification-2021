@@ -6,14 +6,14 @@ import {
   ToggleLabel,
 } from './ThemeToggle.styles';
 
-const ThemeToggle = ({ themeToggler }) => {
+const ThemeToggle = ({ themeToggler, theme }) => {
   return (
     <>
       <ToggleWrapper>
         <ToggleInput type="checkbox" onChange={() => themeToggler()} />
         <ToggleSlider />
       </ToggleWrapper>
-      <ToggleLabel>Dark mode</ToggleLabel>
+      <ToggleLabel>{theme === 'light' ? 'Light mode' : 'Dark mode'}</ToggleLabel>
     </>
   );
 };

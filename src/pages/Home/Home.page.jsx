@@ -3,10 +3,10 @@ import React from 'react';
 import HomeBody from '../../components/HomeBody';
 import Header from '../../components/Header';
 
-const HomePage = ({ themeToggler }) => {
+const HomePage = ({ themeToggler, theme }) => {
   return (
     <>
-      <Header themeToggler={themeToggler} />
+      <Header themeToggler={themeToggler} theme={theme} />
       <HomeBody />
     </>
   );

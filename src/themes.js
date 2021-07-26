@@ -8,7 +8,7 @@ export const lightTheme = {
     inputBackground: '#557F98',
     menuHoverBackground: '#1B5171',
     loginBackground: '#BDBDBD',
-    toggleBackground: '#1C54760',
+    toggleBackground: '#557F98',
     toggleCircle: '#FFF',
 };
 
